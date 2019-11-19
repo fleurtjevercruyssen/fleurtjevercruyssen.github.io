@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.goed
+		{
+			background-color: #DAF7A6;
+		}
+		
+		.fout
+		{
+			background-color: #FF5733;
+		}
+		
+		.resultaatBox{
+			padding: 20px;
+		}
+		
+		.score{
+			font-size: 28px;
+			padding-left: 190px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+<table>
+	<tr>
+		<td colspan="2" style="text-align: left; vertical-align: middle;"><span class="score">Score: </span><span class = "score" id="score"></span></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: left; vertical-align: middle;"><span class="score" id="vooruitgang"></span></td>
+	</tr>
+	<tr>
+		<td><img id="klok1"  src="1-8_30.png" width="400" height="400"></img></td>
+		<td>
+		<div id="klok1Resultaat" class="resultaatBox">
+			<label><input type="radio" name="klok1" onclick="ControleerAntwoord(this);" value="1"/>Half negen</label><br>
+			<label><input type="radio" name="klok1" onclick="ControleerAntwoord(this);" value="0"/>Twintig na acht</label><br>
+			<label><input type="radio" name="klok1" onclick="ControleerAntwoord(this);" value="0"/>Vijfentwintig na acht</label><br>  
+			<label><input type="radio" name="klok1" onclick="ControleerAntwoord(this);" value="0"/>Acht uur</label><br>  
+			<p id="klok1Verbetering">
+			
+			</p
+				
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><img id="klok2"  src="2-8_0.png" width="400" height="400"></img></td> 
+		<td>
+		<div id="klok2Resultaat" class="resultaatBox">
+			<label><input type="radio" name="klok2" onclick="ControleerAntwoord(this);" value="0"/>Half negen</label><br>
+			<label><input type="radio" name="klok2" onclick="ControleerAntwoord(this);" value="0">Twintig na acht</label><br>
+			<label><input type="radio" name="klok2" onclick="ControleerAntwoord(this);" value="0">Vijfentwintig na acht</label><br>  
+			<label><input type="radio" name="klok2" onclick="ControleerAntwoord(this);" value="1">Acht uur</label><br>  
+			<p id="klok2Verbetering">
+			
+			</p
+				
+			</div>
+		</td>		
+	</tr>
+	<tr>
+		<td><img id="klok3"  src="3-4_30.png" width="400" height="400"></img></td>  
+	</tr>
+	<tr>
+		<td><img id="klok4"  src="4-3_0.png" width="400" height="400"></img></td>   
+	</tr>
+	<tr>
+		<td><img id="klok5"  src="5-1_30.png" width="400" height="400"></img></td>  
+	</tr>
+	<tr>
+		<td><img id="klok6"  src="6-7_0.png" width="400" height="400"></img></td>   
+	</tr>
+	<tr>
+		<td><img id="klok7"  src="7-12_30.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok8"  src="8-12_0.png" width="400" height="400"></img></td>  
+	</tr>
+	<tr>
+		<td><img id="klok9"  src="9-12_15.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok10" src="10-5_45.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok11" src="11-5_15.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok12" src="12-7_45.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok13" src="13-4_15.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok14" src="14-12_45.png" width="400" height="400"></img></td>
+	</tr>
+	<tr>
+		<td><img id="klok15" src="15-8_10.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok16" src="16-5_40.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok17" src="17-3_20.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok18" src="18-10_40.png" width="400" height="400"></img></td>
+	</tr>
+	<tr>
+		<td><img id="klok19" src="19-7_5.png" width="400" height="400"></img></td>  
+	</tr>
+	<tr>
+		<td><img id="klok20" src="20-7_55.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok21" src="21-8_40.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok22" src="22-8_5.png" width="400" height="400"></img></td>  
+	</tr>
+	<tr>
+		<td><img id="klok23" src="23-1_55.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok24" src="24-6_25.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok25" src="25-3_30.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok26" src="26-10_0.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok27" src="27-10_30.png" width="400" height="400"></img></td>
+	</tr>
+	<tr>
+		<td><img id="klok28" src="28-12_0.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok29" src="29-12_5.png" width="400" height="400"></img></td> 
+	</tr>
+	<tr>
+		<td><img id="klok30" src="30-5_25.png" width="400" height="400"></img></td> 
+	</tr>
+</table>
+
+<script>
+	var aantalJuisteAntwoorden = 0;
+	var aantalAntwoorden = 0;
+	function ControleerAntwoord(antwoord) { 
+		aantalAntwoorden++;
+		var resultaatBox = document.getElementById(antwoord.name + "Resultaat");
+		var elementen = document.getElementsByName(antwoord.name);
+		var juistAntwoord = "";
+		elementen.forEach(function(item,index)
+		{
+			if(item.checked == false)
+			{
+				item.setAttribute("disabled", true);
+			}
+			if(item.value === "1")
+			{
+				juistAntwoord = item.labels[0].textContent;
+			}
+		})
+		var text = ""
+		if(antwoord.value === "1")
+		{
+			resultaatBox.classList.add("goed");
+			text = "Hoera, het antwoord is correct!"
+			aantalJuisteAntwoorden++;			
+		}
+		else
+		{
+			resultaatBox.classList.add("fout");
+			text = "Helaas het antwoord is niet correct, het juiste antwoord is: " + juistAntwoord;
+		}
+		
+		var verbetering = document.getElementById(antwoord.name + "Verbetering");	
+		verbetering.appendChild(document.createTextNode(text));	
+	
+		document.getElementById("score").innerHTML = aantalJuisteAntwoorden +  "/30";	
+		document.getElementById("vooruitgang").innerHTML = aantalAntwoorden +  "/30 reeds beantwoord.";	
+		
+		if(aantalAntwoorden == 30)
+		{
+			alert("Je eindscore bedraagt: " + aantalJuisteAntwoorden + "/30");
+		}
+    } 
+
+</script>
+
+</body>
+</html>
