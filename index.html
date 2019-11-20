@@ -159,10 +159,8 @@
 		var juistAntwoord = "";
 		elementen.forEach(function(item,index)
 		{
-			if(item.checked == false)
-			{
-				item.setAttribute("disabled", true);
-			}
+			item.setAttribute("disabled", true);
+		
 			if(item.value === "1")
 			{
 				juistAntwoord = item.labels[0].textContent;
